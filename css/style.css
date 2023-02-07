@@ -1,0 +1,884 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+header{
+    background: black;
+    height: 50px;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin: 10px;
+    height: 50px;
+}
+
+/* Barra de navegación */
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    display: block;
+    padding: 2.1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 200;
+} 
+nav a:hover{
+    background-color: #3d1c05;
+}
+
+/* Principal */
+html{
+    font-size: 62.5%;
+}
+.principal__titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+    text-shadow: 8px 2px 8px black;
+}
+.principal{
+    background-image: url(/images/Kep1er-22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 91.7vh;
+    background-attachment: fixed;   
+}
+.principal__social{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.principal__social li{
+    padding-top: 70rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 5rem;
+}
+.principal__social a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 2px 5px black;
+}
+.principal__social a:hover i{
+    color: #3d1c05;
+}
+
+/* Footer */
+footer{
+    background: #111;
+    font-family: 'Unbounded', cursive;
+    color: #fff;
+}
+.footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer__titulo{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 200;
+}
+.footer__subtitulo{
+    padding-bottom: 0.5rem;
+}
+.footer__abajo{
+    background: #000;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Discografía */
+.discografia__titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    text-shadow: 8px 2px 8px black;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    margin-left: 6rem;
+}
+
+.discografia__subtitulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    text-shadow: 8px 2px 8px black;
+    margin-left: 6rem;
+}
+.discografia__fondo{
+    background-image: url(/images/Fondo\ Discografia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 91.8vh;
+    background-attachment: fixed;   
+}
+.discografia__spotify{
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    margin-left: 2.4%;
+    width: 30%;
+    height: 352px;
+}
+
+/* Fanclub */
+.fanclub__fondo{
+    background-image: url(/images/Fondo\ Fanclub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 91.7vh;
+    background-attachment: fixed;   
+}
+.fanclub__contenedor{
+    font-family: 'Unbounded', cursive;
+    height: 870px;
+    width: 1190px;
+    background-color: black;
+    background-position: center;
+    overflow: auto;
+    margin: 0 auto;  
+}
+.contenedor--gris{
+    margin-top: 2rem;
+    height: 695px;
+    width: auto;
+    background-color: rgb(196, 196, 196);
+}
+.fanclub__titulo{
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    margin-top: 8rem;
+}
+.fanclub__video{
+    padding-top: 10rem;
+    margin-left: 10rem;
+}
+.fanclub__text{
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    margin-right: 50rem;
+    text-align: center;
+}
+.fanclub__subtitulo{
+    font-family: 'Unbounded', cursive;
+    color: black;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-left: 10rem; 
+}
+.fanclub__beneficios{
+    padding-left: 11.5rem; 
+    margin: 5px;
+    font-size: 1.5rem;
+}
+/* Formulario del Fanclub */
+.formulario{
+    float: right;
+    margin-right: 13rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.form__label{
+    display: block;
+}
+.boton{
+    height: 35px;
+    width: auto;
+    padding: 0 35px 0 35px;
+    margin-top: 1rem;
+    font-family: 'Unbounded', cursive;
+    outline: none;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #cdafff;
+}
+.form__input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    width: 100%;
+    cursor: pointer;
+}
+.form__label{
+    margin-top: 2rem;
+}
+.form__text{
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+/* Galería */
+.galeria__titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    text-shadow: 8px 2px 8px black;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+    margin-left: 6rem;
+}
+.galeria__fondo{
+    background-image: url(/images/Fondo\ Discografia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 91.8vh;
+    background-attachment: fixed;   
+}
+.galeria__containerFotos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 150px;
+    padding: 10px 60px 40px 60px;
+    grid-gap: 10px;
+}
+.galeria__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Arreglo de las imagenes para que encajen*/
+.galeria__item:nth-child(1){
+    grid-column-start: span 3;
+    grid-row-start: span 4;
+}
+.galeria__item:nth-child(2){
+    grid-row-start: span 3;
+}
+.galeria__item:nth-child(3){
+    grid-row-start: span 3;
+}
+.galeria__item:nth-child(4){
+    grid-column-start: span 2;
+}
+.galeria__item:nth-child(5){
+    grid-column-start: span 3;
+    grid-row-start: span 2;
+}
+.galeria__item:nth-child(6){
+    grid-row-start: span 3;
+}
+.galeria__item:nth-child(7){
+    grid-row-start: span 3;
+}
+.galeria__item:nth-child(8){
+    grid-row-start: span 3;
+}
+.galeria__item:nth-child(9){
+    grid-row-start: span 3;
+    grid-column-start: span 2;
+}
+.galeria__item:nth-child(10){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+/* Integrantes */
+.integrantes__titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    text-shadow: 8px 2px 8px black;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+.integrantes__fondo{
+    background-image: url(/images/Fondo\ Integrantes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed; 
+}
+.integrantes__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.integrantes__img{
+    width: 238px;
+    height: 340px;
+    cursor: pointer;
+}
+.integrantes__subtitulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 8px 2px 8px black;
+    text-align: center;
+}
+.card{
+    width: 238px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    transition: all 300ms;
+}
+.card:hover{
+    transform: scale(1.10);
+}
+
+/* Sobre Kep1er */
+.sobrekep__fondo{
+    background-image: url(/images/Fondo\ SobreKep1er.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed; 
+}
+.sobrekep__titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    text-shadow: 8px 2px 8px black;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    margin-left: 6rem;
+}
+.sobrekep__subtitulo--izquierda{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    font-size: 2.3rem;
+    margin-left: 18rem;
+    margin-top: 3rem;
+    background-color: #000;
+}
+.sobrekep__texto--izquierda{
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.7rem;
+    margin: 10px;
+    margin-left: 18rem;
+}
+.sobrekep__video{
+    width: 1640px;
+    height: 310px;
+    margin: 7px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 18rem;
+}
+.sobrekep__textovideo{
+    display: flex;
+    background-color: #000;  
+}
+.sobrekep__texto{
+    display: flex;
+    flex-direction: column;
+}
+.sobrekep__subtitulo--derecha{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    font-size: 2.3rem;
+    margin-left: 5.5rem;
+    margin-top: 3.5rem;
+    margin-right: 18rem;
+}
+.sobrekep__texto--derecha{
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    margin: 10px;
+    margin-right: 18rem;
+    margin-left: 5.3rem;
+}
+.sobrekep__img{
+    width: 540px;
+    height: 305px;
+    padding-left: 18rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.sobrekep__textoimg{
+    display: flex;
+    background-color: black;
+}
+.sobrekep__texto--centro{
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    margin: 10px;
+}
+.sobrekep__texto--centro--contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 2rem 0 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile View */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /* Principal */
+    .principal__titulo{
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .principal__social li{
+        padding-top: 68rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* Discografía */
+    .discografia__titulo{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 1px;
+    }
+    .discografia__subtitulo{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-left: 0px;
+    }
+    .discografia__spotify{
+        height: 80px;
+        width: 95%;
+        align-items: center;
+    }
+    /* Fanclub */
+    .fanclub__contenedor{
+        height: auto;
+        width: 100%;
+        background-color: black;
+    }
+    .contenedor--gris{
+        height: 100%;
+        width: auto;
+    }
+    .fanclub__titulo{
+        font-size: 2rem;
+    }
+    .fanclub__video{
+        padding-top: 2rem;
+        margin-left: 1rem;
+        width: 95%;
+    }
+    .fanclub__subtitulo{
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        text-align: center;
+        margin-left: 0%; 
+    }
+    .fanclub__beneficios{
+        padding-left: 2rem;
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+    /* Formulario Fanclub */
+    .formulario{
+        float: none;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .form__label{
+        display: block;
+    }
+    .boton{
+        font-size: 1rem;
+        height: 20px;
+        width: 40%;
+        padding: 0 5px 0 5px;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .boton:hover{
+        background-color: #cdafff;
+    }
+    .form__label{
+        margin-top: 2rem;
+        display: flex;
+    }
+    .form__text{
+        font-size: 1.2rem;
+        display: inline;
+    }
+    /* Galeria */
+    .galeria__titulo{
+        font-size: 3rem;
+        margin-left: 0px;
+        padding-top: 8rem;
+        text-align: center;
+    }
+    .galeria__containerFotos{
+        padding: 10px 20px 20px 20px;
+        grid-gap: 10px;
+    }
+    .galeria__item:nth-child(1){
+        grid-column-start: span 5;
+        grid-row-start: span 1;
+    }
+    .galeria__item:nth-child(2){
+        grid-row-start: span 1;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(3){
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(4){
+        grid-column-start: span 5;
+    }
+    .galeria__item:nth-child(5){
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+    }
+    .galeria__item:nth-child(6){
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(7){
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(8){
+        grid-row-start: span 2;
+        grid-column-start: span 5 ;
+    }
+    .galeria__item:nth-child(9){
+        grid-row-start: span 2;
+        grid-column-start: span 5;
+    }
+    .galeria__item:nth-child(10){
+        grid-row-start: span 2;
+        grid-column-start: span 5;
+    }
+    /* Integrantes */
+    .integrantes__titulo{
+        font-size: 3rem;
+    }
+    .integrantes__contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Principal */
+    .principal__titulo{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .principal__social li{
+        padding-top: 70rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* Discografía */
+    .discografia__titulo{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 1px;
+    }
+    .discografia__subtitulo{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-left: 0px;
+    }
+    .discografia__spotify{
+        height: 80px;
+        width: 95%;
+        align-items: center;
+    }
+    /* Fanclub */
+    .fanclub__contenedor{
+        height: auto;
+        width: 100%;
+        background-color: black;
+    }
+    .contenedor--gris{
+        height: 100%;
+        width: auto;
+    }
+    .fanclub__titulo{
+        font-size: 3rem;
+    }
+    .fanclub__video{
+        padding-top: 2rem;
+        margin-left: 2.5%;
+        margin-right: 1rem;
+        width: 95%;
+        
+    }
+    .fanclub__subtitulo{
+        font-size: 2rem;
+        margin-top: 0rem;
+        text-align: center;
+        margin-left: 0%; 
+    }
+    .fanclub__beneficios{
+        padding-left: 6rem;
+        padding-bottom: 20px;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+    }
+    /* Formulario Fanclub */
+    .formulario{
+        float: none;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .form__label{
+        display: block;
+    }
+    .boton{
+        font-size: 1.2rem;
+        height: 20px;
+        width: 30%;
+        padding: 0 5px 0 5px;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .boton:hover{
+        background-color: #cdafff;
+    }
+    .form__text{
+        font-size: 1.2rem;
+        display: inline;
+    }
+    /* Galeria */
+    .galeria__titulo{
+        font-size: 4rem;
+        margin-left: 0px;
+        padding-top: 7rem;
+        text-align: center;
+    }
+    .galeria__containerFotos{
+        padding: 10px 20px 20px 20px;
+        grid-gap: 10px;
+    }
+    .galeria__item:nth-child(1){
+        grid-column-start: span 5;
+        grid-row-start: span 2;
+    }
+    .galeria__item:nth-child(2){
+        grid-row-start: span 2;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(3){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(4){
+        grid-column-start: span 5;
+    }
+    .galeria__item:nth-child(5){
+        grid-column-start: span 5;
+        grid-row-start: span 2;
+    }
+    .galeria__item:nth-child(6){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(7){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(8){
+        grid-row-start: span 3;
+        grid-column-start: span 5 ;
+    }
+    .galeria__item:nth-child(9){
+        grid-row-start: span 3;
+        grid-column-start: span 5;
+    }
+    .galeria__item:nth-child(10){
+        grid-row-start: span 3;
+        grid-column-start: span 5;
+    }
+    /* Integrantes */
+    .integrantes__titulo{
+    font-size: 3rem;
+    }
+    .integrantes__contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+/* Un intermedio entre Tablet y Desktop */
+/* Nota: Realice esto porque el formulario, el index y la galería no se veían bien cuando pasaba de 768px a más. */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /* PRINCIPAL */
+    .principal__titulo{
+        font-size: 5rem;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .principal__social li{
+        padding-top: 69rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* FANCLUB */
+    .fanclub__contenedor{
+        height: auto;
+        width: 100%;
+        background-color: black;
+    }
+    .contenedor--gris{
+        height: 100%;
+        width: auto;
+    }
+    .fanclub__titulo{
+        font-size: 5rem;
+    }
+    .fanclub__video{
+        padding-top: 2rem;
+        margin-left: 2.5%;
+        margin-right: 1rem;
+        width: 95%;    
+    }
+    .fanclub__subtitulo{
+        font-size: 2.5rem;
+        margin-top: 0rem;
+        text-align: center;
+        margin-left: 0%; 
+    }
+    .fanclub__beneficios{
+        padding-left: 6rem;
+        padding-bottom: 20px;
+        margin-right: 2rem;
+        font-size: rem;
+    }
+    /* FORMULARIO FANCLUB */
+    .formulario{
+        float: none;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .form__label{
+        display: block;
+    }
+    .boton{
+        font-size: 1.2rem;
+        height: 20px;
+        width: 30%;
+        padding: 0 5px 0 5px;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .boton:hover{
+        background-color: #cdafff;
+    }
+    .form__text{
+        font-size: 1.3rem;
+        display: inline;
+    }
+    /* GALERIA */
+    .galeria__titulo{
+        font-size: 5rem;
+        margin-left: 0px;
+        padding-top: 7rem;
+        text-align: center;
+    }
+    .galeria__containerFotos{
+        padding: 10px 20px 20px 20px;
+        grid-gap: 10px;
+    }
+    .galeria__item:nth-child(1){
+        grid-column-start: span 5;
+        grid-row-start: span 3;
+    }
+    .galeria__item:nth-child(2){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(3){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(4){
+        grid-column-start: span 5;
+        grid-row-start: span 2;
+    }
+    .galeria__item:nth-child(5){
+        grid-column-start: span 5;
+        grid-row-start: span 2;
+    }
+    .galeria__item:nth-child(6){
+        grid-row-start: span 5;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(7){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(8){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+    .galeria__item:nth-child(9){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
+    }
+    .galeria__item:nth-child(10){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+}
