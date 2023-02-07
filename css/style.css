@@ -375,7 +375,7 @@ footer{
     color: white;
     font-size: 2.3rem;
     margin-left: 18rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-color: #000;
 }
 .sobrekep__texto--izquierda{
@@ -406,7 +406,7 @@ footer{
     color: white;
     font-size: 2.3rem;
     margin-left: 5.5rem;
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     margin-right: 18rem;
 }
 .sobrekep__texto--derecha{
@@ -667,7 +667,6 @@ footer{
     }
     .sobrekep__texto--centro--contenedor{
         display: block;
-        background-color: #000;
         padding: 2rem 0 2rem 0;
     }
 }
@@ -822,6 +821,74 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+    /* Sobre Kep1er */
+    .sobrekep__titulo{
+        font-size: 3.5rem;
+        text-align: center;
+        padding-top: 9rem;
+        margin-left: 0rem;
+    }
+    .sobrekep__subtitulo--izquierda{
+        font-size: 2rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .sobrekep__texto--izquierda{
+        font-size: 1.7rem;
+        margin: 10px;
+        text-align: left;
+    }
+    .sobrekep__video{
+        width: 98%;
+        height: 250px;
+        margin: 7px;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .sobrekep__textovideo{
+        display: block;
+    }
+    .sobrekep__texto{
+        display: block;
+    }
+    .sobrekep__subtitulo--derecha{
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
+    .sobrekep__texto--derecha{
+        font-size: 1.6rem;
+        margin: 10px;
+        margin-right: 0rem;
+        margin-left: 1rem;
+        padding-bottom: 2rem;
+    }
+    .sobrekep__img{
+        width: 100%;
+        height: auto;
+        padding-left: 0rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0px;
+    }
+    .sobrekep__textoimg{
+        display: block;
+    }
+    .sobrekep__texto--centro{
+        font-size: 1.6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+        margin: 10px;
+    }
+    .sobrekep__texto--centro--contenedor{
+        display: block;
+        padding: 2rem 0 2rem 0;
+    }
 }
 
 /* Un intermedio entre Tablet y Desktop */
@@ -948,5 +1015,76 @@ footer{
     .galeria__item:nth-child(10){
         grid-row-start: span 3;
         grid-column-start: span 2;
+    }
+    /* Sobre Kep1er */
+    .sobrekep__titulo{
+        font-size: 3.5rem;
+        text-align: center;
+        padding-top: 9rem;
+        margin-left: 0rem;
+    }
+    .sobrekep__subtitulo--izquierda{
+        font-size: 2rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .sobrekep__texto--izquierda{
+        font-size: 1.7rem;
+        margin: 10px;
+        text-align: left;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .sobrekep__video{
+        width: 50%;
+        height: 250px;
+        margin: 7px;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 25%;
+    }
+    .sobrekep__textovideo{
+        display: block;
+    }
+    .sobrekep__texto{
+        display: block;
+    }
+    .sobrekep__subtitulo--derecha{
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
+    .sobrekep__texto--derecha{
+        font-size: 1.6rem;
+        margin: 10px;
+        margin-right: 4rem;
+        margin-left: 4rem;
+        padding-bottom: 2rem;
+    }
+    .sobrekep__img{
+        width: 80%;
+        height: auto;
+        padding-left: 10%;
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0px;
+    }
+    .sobrekep__textoimg{
+        display: block;
+    }
+    .sobrekep__texto--centro{
+        font-size: 1.6rem;
+        padding-left: 0rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;
+        margin: 10px;
+    }
+    .sobrekep__texto--centro--contenedor{
+        display: block;
+        padding: 2rem 0 0 4rem;
     }
 }
