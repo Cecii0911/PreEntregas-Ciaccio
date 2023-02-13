@@ -891,9 +891,9 @@ footer{
     }
 }
 
-/* Un intermedio entre Tablet y Desktop */
+/* Un intermedio entre Tablet y Desktop, Extra View*/
 /* Nota: Realice esto porque el formulario, el index y la galería no se veían bien cuando pasaba de 768px a más. */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1400px) {
     /* PRINCIPAL */
     .principal__titulo{
         font-size: 5rem;
@@ -1052,7 +1052,7 @@ footer{
         display: block;
     }
     .sobrekep__subtitulo--derecha{
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         margin-left: 0rem;
         margin-top: 1rem;
