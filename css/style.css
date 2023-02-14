@@ -29,15 +29,16 @@ header{
 /* Barra de navegación */
 nav ul li{
     display: inline-block;
+    color: white;
 }
 nav ul li a{
     font-family: 'Unbounded', cursive;
-    color: white;
     display: block;
     padding: 2.1rem;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 50rem;
     font-weight: 200;
+    margin: 1rem;
 } 
 nav a:hover{
     background-color: #3d1c05;
