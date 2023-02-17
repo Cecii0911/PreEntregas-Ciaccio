@@ -1,47 +1,35 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: content-box;
 }
 
 /* Header */
-header{
-    background: black;
-    height: 50px;
-    width: 100%;
-    clear: both;
-    content: '';
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    z-index: 1;
-}
 .logo{
     display: flex;
     align-items: center;
 }
 .logo img{
-    margin: 10px;
     height: 50px;
 }
 
 /* Barra de navegación */
+nav ul{
+    margin-bottom: 0px;
+}
 nav ul li{
     display: inline-block;
     color: white;
+    margin-bottom: 0px;
 }
-nav ul li a{
+.nav-link{
     font-family: 'Unbounded', cursive;
     display: block;
-    padding: 2.1rem;
     text-decoration: none;
-    font-size: 1.4rem;
     font-weight: 200;
+    font-size: small;
     margin: 1rem;
-} 
-nav a:hover{
-    background-color: #3d1c05;
+    margin-left: 3rem;
 }
 
 /* Principal */
@@ -54,22 +42,25 @@ html{
     color: white;
     text-align: center;
     text-shadow: 8px 2px 8px black;
+    margin-bottom: 0px;
 }
 .principal{
     background-image: url(/images/Kep1er-22.jpg);
+    min-height: 84.7vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 91.7vh;
     background-attachment: fixed;   
 }
 .principal__social{
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
 }
 .principal__social li{
-    padding-top: 70rem;
+    padding-top: 62rem;
+    margin-bottom: 0px;
     padding-left: 5rem;
     padding-right: 5rem;
     font-size: 5rem;
@@ -98,15 +89,20 @@ footer{
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 200;
+    margin-bottom: 0px;
 }
 .footer__subtitulo{
     padding-bottom: 0.5rem;
+    margin-bottom: 0px;
 }
 .footer__abajo{
     background: #000;
     width: auto;
     padding: 1rem;
     text-align: center;
+}
+.footer__abajo--sub{
+    margin-bottom: 0rem;
 }
 
 /* Discografía */
@@ -151,12 +147,12 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 91.7vh;
+    min-height: 91vh;
     background-attachment: fixed;   
 }
 .fanclub__contenedor{
     font-family: 'Unbounded', cursive;
-    height: 870px;
+    height: 860px;
     width: 1190px;
     background-color: black;
     background-position: center;
@@ -165,7 +161,7 @@ footer{
 }
 .contenedor--gris{
     margin-top: 2rem;
-    height: 695px;
+    height: 688px;
     width: auto;
     background-color: rgb(196, 196, 196);
 }
@@ -203,7 +199,8 @@ footer{
 .formulario{
     float: right;
     margin-right: 13rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 .form__label{
@@ -314,8 +311,16 @@ footer{
     color: white;
     text-align: center;
     text-shadow: 8px 2px 8px black;
-    padding-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
+.integrantes__titulo--dos{
     padding-bottom: 3rem;
+    font-family: 'Unbounded', cursive;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 8px 2px 8px black;
+    text-align: center;
 }
 .integrantes__fondo{
     background-image: url(/images/Fondo\ Integrantes.jpg);
@@ -342,14 +347,19 @@ footer{
     text-shadow: 8px 2px 8px black;
     text-align: center;
 }
-.card{
+.card-border-width-0{
     width: 238px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
     transition: all 300ms;
+    background-color: transparent;
+    color: white;
 }
-.card:hover{
+.card-border-width-0:hover{
     transform: scale(1.10);
+}
+
+.integrantes__link{
+    text-decoration: none;
 }
 
 /* Sobre Kep1er */
@@ -445,12 +455,31 @@ footer{
 }
 
 
+/* INTEGRANTES */
+/* Chaehyun */
+.container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
-
-
-
-
-
+.container p{
+    margin-bottom: 0px;
+}
+.int__texto{
+    margin: 10px;
+}
+.integrante__titulo{
+    font-family: 'Unbounded', cursive;
+    padding-top: 8rem;
+    font-size: 4rem;
+    text-shadow: 8px 2px 8px black;
+}
+.integrante__titulo--dos{
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    text-shadow: 8px 2px 8px black;
+    margin-bottom: 0px;
+}
 
 /* Mobile View */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -460,6 +489,7 @@ footer{
         text-align: center;
         margin-left: 15px;
         margin-right: 15px;
+        padding-bottom: 2rem;
     }
     .principal__social li{
         padding-top: 68rem;
@@ -680,6 +710,7 @@ footer{
         text-align: center;
         margin-left: 15px;
         margin-right: 15px;
+        padding-bottom: 2rem;
     }
     .principal__social li{
         padding-top: 70rem;
@@ -901,6 +932,8 @@ footer{
         text-align: center;
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 0px;
+        padding-bottom: 2rem;
     }
     .principal__social li{
         padding-top: 69rem;

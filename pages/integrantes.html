@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
     <link rel="shortcut icon" href="../images/logo web.png">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- MAIN CSS -->
@@ -18,66 +19,108 @@
     <!--ICONOS-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../images/logo_kep1er_.png" alt="">
-            </a>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li><a href="./sobre-kep1er.html" class="nav-link">Sobre Kep1er</a></li>
-                <li><a href="./integrantes.html" class="nav-link">Integrantes</a></li>
-                <li><a href="./discografia.html" class="nav-link">Discografía</a></li>
-                <li><a href="./galeria.html" class="nav-link">Galería</a></li>
-                <li><a href="./fanclub.html" class="nav-link">Fanclub</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="/images/logo_kep1er_.png" alt="Logo de Kep1er en Navbar">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobre-kep1er.html">Sobre Kep1er</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/pages/integrantes.html">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/fanclub.html">Fanclub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section class="integrantes__fondo">
-        <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="integrantes__titulo">Integrantes</h1>
+        <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="integrantes__titulo">
+            Integrantes</h1>
+        <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="integrantes__titulo--dos">
+            Clic en las imagenes para más información</p>
         <div class="integrantes__contenedor">
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Chaehyun</h2>
-                <img class="integrantes__img" src="/images/Chaehyun.png" alt="Imagen de Chaehyun">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Bahiyyih</h2>
-                <img class="integrantes__img" src="/images/Hiyyih.png" alt="Imagen de Bahiyyih">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Yujin</h2>
-                <img class="integrantes__img" src="/images/Yujin.png" alt="Imagen de Yujin">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Dayeon</h2>
-                <img class="integrantes__img" src="/images/Dayeon.png" alt="Imagen de Dayeon">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Youngeun</h2>
-                <img class="integrantes__img" src="/images/Youngeun.png" alt="Imagen de Youngeun">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Yeseo</h2>
-                <img class="integrantes__img" src="/images/Yeseo.png" alt="Imagen de Yeseo">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Hikaru</h2>
-                <img class="integrantes__img" src="/images/Hikaru.png" alt="Imagen de Hikaru">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Mashiro</h2>
-                <img class="integrantes__img" src="/images/Mashiro.png" alt="Imagen de Mashiro">
-            </div>
-            <div class="card">
-                <h2 class="integrantes__subtitulo">Xiaoting</h2>
-                <img class="integrantes__img" src="/images/Xiaoting.png" alt="Imagen de Xiaoting">
-            </div>
+            <a class="integrantes__link" href="./info-integrantes/chaehyun.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Chaehyun</h2>
+                    <img class="integrantes__img" src="/images/Chaehyun.png" alt="Imagen de Chaehyun">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/bahiyyih.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Bahiyyih</h2>
+                    <img class="integrantes__img" src="/images/Hiyyih.png" alt="Imagen de Bahiyyih">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/yujin.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Yujin</h2>
+                    <img class="integrantes__img" src="/images/Yujin.png" alt="Imagen de Yujin">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/dayeon.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Dayeon</h2>
+                    <img class="integrantes__img" src="/images/Dayeon.png" alt="Imagen de Dayeon">
+                </div>
+            </a>
+            <a class="integrantes__link" href="/pages/info-integrantes/youngeun.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Youngeun</h2>
+                    <img class="integrantes__img" src="/images/Youngeun.png" alt="Imagen de Youngeun">
+                </div>
+            </a>
+            <a class="integrantes__link" href="/pages/info-integrantes/yeseo.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Yeseo</h2>
+                    <img class="integrantes__img" src="/images/Yeseo.png" alt="Imagen de Yeseo">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/hikaru.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Hikaru</h2>
+                    <img class="integrantes__img" src="/images/Hikaru.png" alt="Imagen de Hikaru">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/mashiro.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Mashiro</h2>
+                    <img class="integrantes__img" src="/images/Mashiro.png" alt="Imagen de Mashiro">
+                </div>
+            </a>
+            <a class="integrantes__link" href="./info-integrantes/xiaoting.html">
+                <div class="card-border-width-0">
+                    <h2 class="integrantes__subtitulo">Xiaoting</h2>
+                    <img class="integrantes__img" src="/images/Xiaoting.png" alt="Imagen de Xiaoting">
+                </div>
+            </a>
+
         </div>
     </section>
 
@@ -87,15 +130,18 @@
             <p class="footer__subtitulo">Gracias por visitarnos.</p>
         </div>
         <div class="footer__abajo">
-            <p>Copyright &copy; 2023 - <span>CoderHouse</span></p>
+            <p class="footer__abajo--sub">Copyright &copy; 2023 - <span>CoderHouse</span></p>
         </div>
     </footer>
     <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <!-- JAVASCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>
