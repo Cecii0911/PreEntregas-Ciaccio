@@ -296,8 +296,9 @@ footer{
     color: white;
     text-align: center;
     text-shadow: 8px 2px 8px black;
-    padding-top: 10rem;
-    padding-bottom: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0px;
 }
 .integrantes__fondo{
     background-image: url(/images/Fondo\ Integrantes.jpg);
@@ -324,11 +325,20 @@ footer{
     text-shadow: 8px 2px 8px black;
     text-align: center;
 }
+.integrantes__subtitulo--dos{
+    font-family: 'Unbounded', cursive;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 8px 2px 8px black;
+    text-align: center;
+}
 .card{
     width: 238px;
     margin-bottom: 2rem;
     margin-top: 2rem;
     transition: all 300ms;
+    background-color: transparent;
+    border: transparent;
 }
 .card:hover{
     transform: scale(1.10);
@@ -358,7 +368,7 @@ footer{
     color: white;
     font-size: 2.3rem;
     margin-left: 18rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     background-color: #000;
 }
 .sobrekep__texto--izquierda{
@@ -389,7 +399,7 @@ footer{
     color: white;
     font-size: 2.3rem;
     margin-left: 5.5rem;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     margin-right: 18rem;
 }
 .sobrekep__texto--derecha{
@@ -562,6 +572,9 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+    }
+    .integrantes__subtitulo--dos{
+        font-size: 1.5rem;
     }
     /* Sobre Kep1er */
     .sobrekep__titulo{
