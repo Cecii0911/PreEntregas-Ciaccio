@@ -411,28 +411,6 @@ footer{
     display: flex;
     background-color: black;
 }
-.sobrekep__texto--centro{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-size: 1.6rem;
-    padding-left: 18rem;
-    padding-right: 18rem;
-    margin: 10px;
-}
-.sobrekep__texto--centro--contenedor{
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    padding: 2rem 0 2rem 0;
-}
-
-
-
-
-
-
-
-
 
 /* Mobile View */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -641,16 +619,6 @@ footer{
     }
     .sobrekep__textoimg{
         display: block;
-    }
-    .sobrekep__texto--centro{
-        font-size: 1.6rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        margin: 10px;
-    }
-    .sobrekep__texto--centro--contenedor{
-        display: block;
-        padding: 2rem 0 2rem 0;
     }
 }
 
@@ -861,17 +829,6 @@ footer{
     .sobrekep__textoimg{
         display: block;
     }
-    .sobrekep__texto--centro{
-        font-size: 1.6rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-bottom: 2rem;
-        margin: 10px;
-    }
-    .sobrekep__texto--centro--contenedor{
-        display: block;
-        padding: 2rem 0 2rem 0;
-    }
 }
 
 /* Un intermedio entre Tablet y Desktop, Extra View*/
@@ -1058,16 +1015,5 @@ footer{
     }
     .sobrekep__textoimg{
         display: block;
-    }
-    .sobrekep__texto--centro{
-        font-size: 1.6rem;
-        padding-left: 0rem;
-        padding-right: 4rem;
-        padding-bottom: 2rem;
-        margin: 10px;
-    }
-    .sobrekep__texto--centro--contenedor{
-        display: block;
-        padding: 2rem 0 0 4rem;
     }
 }
