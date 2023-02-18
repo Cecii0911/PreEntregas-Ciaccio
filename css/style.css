@@ -324,6 +324,7 @@ footer{
     color: white;
     text-shadow: 8px 2px 8px black;
     text-align: center;
+    text-decoration: none;
 }
 .integrantes__subtitulo--dos{
     font-family: 'Unbounded', cursive;
