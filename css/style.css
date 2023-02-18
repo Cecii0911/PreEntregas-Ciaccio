@@ -133,12 +133,12 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 91.7vh;
+    min-height: 90.5vh;
     background-attachment: fixed;   
 }
 .fanclub__contenedor{
     font-family: 'Unbounded', cursive;
-    height: 870px;
+    height: auto;
     width: 1190px;
     background-color: black;
     background-position: center;
@@ -147,7 +147,7 @@ footer{
 }
 .contenedor--gris{
     margin-top: 2rem;
-    height: 695px;
+    height: 696px;
     width: auto;
     background-color: rgb(196, 196, 196);
 }
@@ -156,7 +156,7 @@ footer{
     text-align: center;
     color: white;
     font-size: 6rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 .fanclub__video{
     padding-top: 10rem;
@@ -173,7 +173,7 @@ footer{
     font-family: 'Unbounded', cursive;
     color: black;
     font-size: 2rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-left: 10rem; 
 }
 .fanclub__beneficios{
@@ -185,7 +185,7 @@ footer{
 .formulario{
     float: right;
     margin-right: 13rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 2rem;
 }
 .form__label{
@@ -324,7 +324,7 @@ footer{
     color: white;
     text-shadow: 8px 2px 8px black;
     text-align: center;
-    text-decoration: none;
+    
 }
 .integrantes__subtitulo--dos{
     font-family: 'Unbounded', cursive;
@@ -654,6 +654,10 @@ footer{
     }
     .sobrekep__textoimg{
         display: block;
+    }
+    /* Perfiles */
+    .integrante__titulo{
+        font-size: 3rem;
     }
 }
 
