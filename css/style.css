@@ -35,7 +35,7 @@ html{
     text-shadow: 8px 2px 8px black;
 }
 .principal{
-    background-image: url(/images/Kep1er-22.jpg);
+    background-image: url(../images/Kep1er-22.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,7 +112,7 @@ footer{
     margin-left: 6rem;
 }
 .discografia__fondo{
-    background-image: url(/images/Fondo\ Discografia.jpg);
+    background-image: url(../images/Fondo\ Discografia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ footer{
 
 /* Fanclub */
 .fanclub__fondo{
-    background-image: url(/images/Fondo\ Fanclub.jpg);
+    background-image: url(../images/Fondo\ Fanclub.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -234,7 +234,7 @@ footer{
     margin-left: 6rem;
 }
 .galeria__fondo{
-    background-image: url(/images/Fondo\ Discografia.jpg);
+    background-image: url(../images/Fondo\ Discografia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -301,7 +301,7 @@ footer{
     margin-bottom: 0px;
 }
 .integrantes__fondo{
-    background-image: url(/images/Fondo\ Integrantes.jpg);
+    background-image: url(../images/Fondo\ Integrantes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -368,7 +368,7 @@ footer{
 
 /* Sobre Kep1er */
 .sobrekep__fondo{
-    background-image: url(/images/Fondo\ SobreKep1er.jpg);
+    background-image: url(../images/Fondo\ SobreKep1er.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
