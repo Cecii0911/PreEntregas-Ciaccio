@@ -1,0 +1,70 @@
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
+@mixin centrado($text, $item, $justify){
+    text-align: $text;
+    align-items: $item;
+    justify-content: $justify;
+}
+
+@mixin flexbox($dir, $just, $item){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $item;
+}
+
+@mixin gridBox($col, $gap){
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin fontSize($fsize){
+    font-size: $fsize;
+}
+
+@mixin background($repeat ,$size ,$pos ,$minh ,$attach){
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $pos;
+    min-height: $minh;
+    background-attachment: $attach;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+// Mobile View //
+@mixin mobile(){
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        @content;
+    }
+}
+
+// Tablet View //
+@mixin tablet(){
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        @content;
+    }
+}
+
+//Extra View//
+@mixin extra(){
+    @media screen and (min-width: 769px) and (max-width: 1400px){
+        @content;
+    }
+}
