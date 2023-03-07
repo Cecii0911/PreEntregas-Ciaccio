@@ -134,6 +134,7 @@ html {
                 margin-left: 0px;
             }
         }
+
         .discografia__spotify {
             @include margin(1.5rem, 0, 3rem, 2.4%);
             @include sizes(30%, 352px);
@@ -364,7 +365,7 @@ html {
                 color: black;
                 @include fontSize(2rem);
                 margin-top: 4rem;
-                margin-left: 10rem; 
+                margin-left: 10rem;
 
                 @include mobile() {
                     @include fontSize(1.5rem);
@@ -610,48 +611,58 @@ html {
             }
         }
 
-        @include extra(){
-            .galeria__containerFotos{
+        @include extra() {
+            .galeria__containerFotos {
                 padding: 10px 20px 20px 20px;
                 grid-gap: 10px;
             }
-            .galeria__item:nth-child(1){
+
+            .galeria__item:nth-child(1) {
                 grid-column-start: span 5;
                 grid-row-start: span 3;
             }
-            .galeria__item:nth-child(2){
+
+            .galeria__item:nth-child(2) {
                 grid-row-start: span 3;
                 grid-column-start: span 3;
             }
-            .galeria__item:nth-child(3){
+
+            .galeria__item:nth-child(3) {
                 grid-row-start: span 3;
                 grid-column-start: span 2;
             }
-            .galeria__item:nth-child(4){
+
+            .galeria__item:nth-child(4) {
                 grid-column-start: span 5;
                 grid-row-start: span 2;
             }
-            .galeria__item:nth-child(5){
+
+            .galeria__item:nth-child(5) {
                 grid-column-start: span 5;
                 grid-row-start: span 2;
             }
-            .galeria__item:nth-child(6){
+
+            .galeria__item:nth-child(6) {
                 grid-row-start: span 5;
                 grid-column-start: span 3;
             }
-            .galeria__item:nth-child(7){
+
+            .galeria__item:nth-child(7) {
                 grid-row-start: span 3;
                 grid-column-start: span 2;
             }
-            .galeria__item:nth-child(8){
+
+            .galeria__item:nth-child(8) {
                 grid-row-start: span 2;
                 grid-column-start: span 2;
             }
-            .galeria__item:nth-child(9){
+
+            .galeria__item:nth-child(9) {
                 grid-row-start: span 3;
                 grid-column-start: span 3;
             }
-            .galeria__item:nth-child(10){
+
+            .galeria__item:nth-child(10) {
                 grid-row-start: span 3;
                 grid-column-start: span 2;
             }
@@ -750,12 +761,12 @@ html {
             @include padding(9rem, 0, 2rem, 0);
             @include fontSize(5rem);
 
-            @include mobile(){
-                @include fontSize(3.5rem);  
+            @include mobile() {
+                @include fontSize(3.5rem);
             }
 
-            @include tablet(){
-                @include fontSize(4rem);  
+            @include tablet() {
+                @include fontSize(4rem);
             }
         }
 
@@ -772,11 +783,11 @@ html {
 }
 
 // SOBRE KEP1ER //
-.sobrekep__fondo{
+.sobrekep__fondo {
     @include background(no-repeat, cover, center, 100vh, fixed);
     background-image: url(../images/SobreKep1er.jpg);
 
-    .sobrekep__titulo{
+    .sobrekep__titulo {
         font-family: $fontUnbounded;
         @include fontSize(4rem);
         color: $ppal;
@@ -786,60 +797,61 @@ html {
         padding-bottom: 3rem;
         margin-left: 6rem;
 
-        @include mobile(){
+        @include mobile() {
             @include fontSize(3.5rem);
             text-align: center;
             padding-top: 9rem;
             margin-left: 0rem;
         }
 
-        @include tablet(){
+        @include tablet() {
             @include fontSize(3.5rem);
             text-align: center;
             padding-top: 9rem;
             margin-left: 0rem;
         }
 
-        @include extra(){
+        @include extra() {
             @include fontSize(3.5rem);
             text-align: center;
             padding-top: 9rem;
             margin-left: 0rem;
         }
     }
-    .sobrekep__textovideo{
+
+    .sobrekep__textovideo {
         display: flex;
-        background-color: #000; 
-        
-        @include mobile(){
+        background-color: #000;
+
+        @include mobile() {
             display: block;
         }
 
-        @include tablet(){
+        @include tablet() {
             display: block;
         }
 
-        @include extra(){
+        @include extra() {
             display: block;
         }
 
-        .sobrekep__texto{
+        .sobrekep__texto {
             display: flex;
             flex-direction: column;
 
-            @include mobile(){
+            @include mobile() {
                 display: block;
             }
 
-            @include tablet(){
-                display: block;
-            }
-    
-            @include extra(){
+            @include tablet() {
                 display: block;
             }
 
-            .sobrekep__subtitulo--izquierda{
+            @include extra() {
+                display: block;
+            }
+
+            .sobrekep__subtitulo--izquierda {
                 font-family: $fontUnbounded;
                 color: $ppal;
                 @include fontSize(2.3rem);
@@ -847,7 +859,7 @@ html {
                 margin-top: 1.5rem;
                 background-color: #000;
 
-                @include mobile(){
+                @include mobile() {
                     @include fontSize(2rem);
                     margin-left: 0rem;
                     margin-top: 0rem;
@@ -855,7 +867,7 @@ html {
                     text-align: center;
                 }
 
-                @include tablet(){
+                @include tablet() {
                     @include fontSize(2rem);
                     margin-left: 0rem;
                     margin-top: 0rem;
@@ -863,7 +875,7 @@ html {
                     text-align: center;
                 }
 
-                @include extra(){
+                @include extra() {
                     @include fontSize(2rem);
                     margin-left: 0rem;
                     margin-top: 0rem;
@@ -872,26 +884,26 @@ html {
                 }
             }
 
-            .sobrekep__texto--izquierda{
+            .sobrekep__texto--izquierda {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
                 color: $ppal;
                 @include fontSize(1.7rem);
                 margin: 10px;
                 margin-left: 18rem;
 
-                @include mobile(){
+                @include mobile() {
                     @include fontSize(1.7rem);
                     margin: 10px;
                     text-align: left;
                 }
 
-                @include tablet(){
+                @include tablet() {
                     @include fontSize(1.7rem);
                     margin: 10px;
                     text-align: left;
                 }
 
-                @include extra(){
+                @include extra() {
                     @include fontSize(1.7rem);
                     margin: 10px;
                     text-align: left;
@@ -901,28 +913,28 @@ html {
             }
         }
 
-        .sobrekep__video{
+        .sobrekep__video {
             width: 1640px;
             height: 310px;
             @include sizes(1640px, 310px);
             margin: 7px;
             @include margin(3rem, 18rem, 3rem, 0);
 
-            @include mobile(){
+            @include mobile() {
                 @include sizes(95%, 250px);
                 margin: 7px;
                 margin-top: 1rem;
                 margin-bottom: 1.5rem;
             }
-            
-            @include tablet(){
+
+            @include tablet() {
                 @include sizes(98%, 250px);
                 margin: 7px;
                 margin-top: 1rem;
                 margin-bottom: 1.5rem;
             }
 
-            @include extra(){
+            @include extra() {
                 @include sizes(50%, 250px);
                 margin: 7px;
                 margin-top: 1rem;
@@ -932,29 +944,29 @@ html {
         }
     }
 
-    .sobrekep__textoimg{
+    .sobrekep__textoimg {
         display: flex;
         background-color: black;
 
-        @include mobile(){
+        @include mobile() {
             display: block;
         }
 
-        @include tablet(){
+        @include tablet() {
             display: block;
         }
 
-        @include extra(){
+        @include extra() {
             display: block;
         }
 
-        .sobrekep__img{
+        .sobrekep__img {
             @include sizes(540px, 305px);
             padding-left: 18rem;
             margin-top: 3rem;
             margin-bottom: 3rem;
 
-            @include mobile(){
+            @include mobile() {
                 @include sizes(100%, auto);
                 padding-left: 0rem;
                 margin-top: 1.5rem;
@@ -962,7 +974,7 @@ html {
                 padding-bottom: 0px;
             }
 
-            @include tablet(){
+            @include tablet() {
                 @include sizes(100%, auto);
                 padding-left: 0rem;
                 margin-top: 1.5rem;
@@ -970,7 +982,7 @@ html {
                 padding-bottom: 0px;
             }
 
-            @include extra(){
+            @include extra() {
                 @include sizes(80%, auto);
                 padding-left: 10%;
                 margin-top: 1.5rem;
@@ -978,57 +990,57 @@ html {
                 padding-bottom: 0px;
             }
         }
-        
-        .sobrekep__texto{
+
+        .sobrekep__texto {
             display: flex;
             flex-direction: column;
 
-            @include mobile(){
+            @include mobile() {
                 display: block;
             }
 
-            @include tablet(){
-                display: block;
-            }
-    
-            @include extra(){
+            @include tablet() {
                 display: block;
             }
 
-            .sobrekep__subtitulo--derecha{
+            @include extra() {
+                display: block;
+            }
+
+            .sobrekep__subtitulo--derecha {
                 font-family: $fontUnbounded;
                 color: $ppal;
                 @include fontSize(2.3rem);
                 @include margin(2rem, 18rem, 0, 5.5rem);
 
-                @include mobile(){
+                @include mobile() {
                     @include fontSize(2rem);
                     text-align: center;
                     @include margin(1rem, 0rem, 0, 0rem);
                 }
 
-                @include tablet(){
+                @include tablet() {
                     @include fontSize(2rem);
                     text-align: center;
                     @include margin(1rem, 0rem, 0, 0rem);
                 }
 
-                @include extra(){
+                @include extra() {
                     @include fontSize(2.5rem);
                     text-align: center;
                     @include margin(1rem, 0rem, 0, 0rem);
                 }
             }
 
-            .sobrekep__texto--derecha{
+            .sobrekep__texto--derecha {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 color: $ppal;
                 @include fontSize(1.6rem);
                 margin: 10px;
                 margin-right: 18rem;
                 margin-left: 5.3rem;
-            
-                @include mobile(){
+
+                @include mobile() {
                     @include fontSize(1.6rem);
                     margin: 10px;
                     margin-right: 0rem;
@@ -1036,7 +1048,7 @@ html {
                     padding-bottom: 2rem;
                 }
 
-                @include tablet(){
+                @include tablet() {
                     @include fontSize(1.6rem);
                     margin: 10px;
                     margin-right: 0rem;
@@ -1044,7 +1056,7 @@ html {
                     padding-bottom: 2rem;
                 }
 
-                @include extra(){
+                @include extra() {
                     @include fontSize(1.6rem);
                     margin: 10px;
                     margin-right: 0rem;
@@ -1054,4 +1066,136 @@ html {
             }
         }
     }
+}
+
+// Error 404 //
+
+.error__main {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: row;
+    min-height: 90.5vh;
+
+    @include mobile() {
+        flex-direction: column;
+    }
+
+    .error__img {
+        @include padding(11rem, 2rem, 10rem, 15rem);
+        @include sizes(40%, 40%);
+
+        @include mobile() {
+            @include padding(8rem, 0, 2rem, 1.5rem);
+            @include sizes(90%, auto);
+        }
+
+        @include tablet() {
+
+            @include padding(25rem, 0, 2rem, 6rem);
+            @include sizes(50%, 50%);
+        }
+
+        @include extra() {
+            @include padding(20rem, 0, 2rem, 6rem);
+            @include sizes(50%, 50%);
+        }
+    }
+
+    .error__texto {
+        flex-direction: column;
+
+        .error__titulo {
+            font-family: $fontUnbounded;
+            color: black;
+            font-weight: bold;
+            @include fontSize(8rem);
+            margin-top: 17rem;
+            margin-left: 0%;
+            text-align: start;
+
+            @include mobile() {
+                @include fontSize(3rem);
+                margin-top: 1rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+
+            @include tablet() {
+                @include fontSize(4rem);
+                margin-top: 35rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+
+            @include extra() {
+                @include fontSize(5rem);
+                margin-top: 35rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+        }
+
+        .error__subtitulo {
+            font-family: $fontUnbounded;
+            color: black;
+            @include fontSize(4rem);
+            margin-left: 0%;
+            text-align: center;
+
+            @include mobile() {
+                @include fontSize(1.5rem);
+                text-align: center;
+            }
+
+            @include tablet() {
+                @include fontSize(2rem);
+                margin-left: 1%;
+                text-align: center;
+            }
+
+            @include extra() {
+                @include fontSize(2rem);
+                margin-left: 1%;
+                text-align: center;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+
+            .error__p {
+                font-family: $fontUnbounded;
+                color: rgb(61, 61, 61);
+                @include fontSize(2rem);
+                text-align: start;
+                padding-top: 1rem;
+
+                &:hover {
+                    color: #3d1c05;
+                }
+
+                @include mobile() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+
+                }
+
+                @include tablet() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+                }
+
+                @include extra() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+                }
+
+
+            }
+        }
+
+    }
+
+
 }
