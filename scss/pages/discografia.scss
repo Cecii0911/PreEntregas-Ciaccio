@@ -1,0 +1,68 @@
+// DISCOGRAFÍA //
+.discografia__fondo {
+    @include background(no-repeat, cover, center, 91.8vh, fixed);
+    background-image: url(../images/Discografia.jpg);
+
+    .discografia__titulo {
+        font-family: $fontUnbounded;
+        @include fontSize(4rem);
+        color: $ppal;
+        text-align: left;
+        margin-left: 6rem;
+        @include padding(10rem, 0, 3rem, 0);
+        text-shadow: $sombraTitulo;
+
+        @include mobile() {
+            @include fontSize(2.5rem);
+            text-align: center;
+            margin-left: 1px;
+        }
+
+        @include tablet() {
+            @include fontSize(3rem);
+            text-align: center;
+            margin-left: 0px;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .discografia__contenedor {
+        .discografia__subtitulo {
+            font-family: $fontUnbounded;
+            @include fontSize(2.5rem);
+            color: $ppal;
+            text-align: left;
+            margin-left: 6rem;
+            text-shadow: $sombraTitulo;
+
+            @include mobile() {
+                @include fontSize(2rem);
+                text-align: center;
+                padding-bottom: 1rem;
+                margin-left: 0px;
+            }
+
+            @include tablet() {
+                @include fontSize(2rem);
+                text-align: center;
+                padding-bottom: 1rem;
+                margin-left: 0px;
+            }
+        }
+
+        .discografia__spotify {
+            @include margin(1.5rem, 0, 3rem, 2.4%);
+            @include sizes(30%, 352px);
+
+            @include mobile() {
+                align-items: center;
+                @include sizes(95%, 80px);
+            }
+
+            @include tablet() {
+                align-items: center;
+                @include sizes(95%, 80px);
+            }
+        }
+    }
+}

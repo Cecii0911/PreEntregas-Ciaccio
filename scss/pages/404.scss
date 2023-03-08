@@ -1,0 +1,125 @@
+// Error 404 //
+.error__main {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: row;
+    min-height: 90.5vh;
+
+    @include mobile() {
+        flex-direction: column;
+    }
+
+    .error__img {
+        @include padding(11rem, 2rem, 10rem, 15rem);
+        @include sizes(40%, 40%);
+
+        @include mobile() {
+            @include padding(8rem, 0, 2rem, 1.5rem);
+            @include sizes(90%, auto);
+        }
+
+        @include tablet() {
+
+            @include padding(25rem, 0, 2rem, 6rem);
+            @include sizes(50%, 50%);
+        }
+
+        @include extra() {
+            @include padding(20rem, 0, 2rem, 6rem);
+            @include sizes(50%, 50%);
+        }
+    }
+
+    .error__texto {
+        flex-direction: column;
+
+        .error__titulo {
+            font-family: $fontUnbounded;
+            color: black;
+            font-weight: bold;
+            @include fontSize(8rem);
+            margin-top: 17rem;
+            margin-left: 0%;
+            text-align: start;
+
+            @include mobile() {
+                @include fontSize(3rem);
+                margin-top: 1rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+
+            @include tablet() {
+                @include fontSize(4rem);
+                margin-top: 35rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+
+            @include extra() {
+                @include fontSize(5rem);
+                margin-top: 35rem;
+                margin-left: 0%;
+                text-align: center;
+            }
+        }
+
+        .error__subtitulo {
+            font-family: $fontUnbounded;
+            color: black;
+            @include fontSize(4rem);
+            margin-left: 0%;
+            text-align: center;
+
+            @include mobile() {
+                @include fontSize(1.5rem);
+                text-align: center;
+            }
+
+            @include tablet() {
+                @include fontSize(2rem);
+                margin-left: 1%;
+                text-align: center;
+            }
+
+            @include extra() {
+                @include fontSize(2rem);
+                margin-left: 1%;
+                text-align: center;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+
+            .error__p {
+                font-family: $fontUnbounded;
+                color: rgb(61, 61, 61);
+                @include fontSize(2rem);
+                text-align: start;
+                padding-top: 1rem;
+
+                &:hover {
+                    color: #3d1c05;
+                }
+
+                @include mobile() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+
+                }
+
+                @include tablet() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+                }
+
+                @include extra() {
+                    @include fontSize(1.5rem);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

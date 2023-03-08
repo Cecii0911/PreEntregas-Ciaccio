@@ -1,0 +1,77 @@
+//  PRINCIPAL //
+html {
+    @include fontSize(62.5%);
+}
+
+.principal {
+    @include background(no-repeat, cover, center, 90.5vh, fixed);
+    background-image: url(../images/Kep1er-22.jpg);
+
+    .principal__social {
+        list-style: none;
+        @include flexbox(0, center, none);
+        margin-bottom: 0px;
+
+        li {
+            @include padding(67rem, 5rem, 0, 5rem);
+            @include fontSize(5rem);
+
+            @include mobile() {
+                @include padding(68rem, 1rem, 0, 1rem);
+                @include fontSize(2rem);
+                text-align: center;
+            }
+
+            @include tablet() {
+                @include padding(70rem, 1rem, 0, 1rem);
+                @include fontSize(2.5rem);
+                text-align: center;
+            }
+
+            @include extra() {
+                @include padding(69rem, 1rem, 0, 1rem);
+                @include fontSize(3rem);
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: $ppal;
+                text-shadow: $sombraSocial;
+
+                &:hover {
+                    i {
+                        color: #3d1c05;
+                    }
+                }
+            }
+        }
+    }
+
+    .principal__titulo {
+        font-family: $fontUnbounded;
+        @include fontSize(8rem);
+        color: $ppal;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-bottom: 1rem;
+        text-shadow: $sombraTitulo;
+
+        @include mobile() {
+            @include fontSize(3rem);
+            @include margin(0, 15px, 0, 15px);
+        }
+
+        @include tablet() {
+            @include fontSize(3.5rem);
+            text-align: center;
+            @include margin(0, 15px, 0, 15px);
+        }
+
+        @include extra() {
+            @include fontSize(5rem);
+            text-align: center;
+            @include margin(0, 15px, 0, 15px);
+        }
+    }
+}

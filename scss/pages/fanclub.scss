@@ -1,0 +1,262 @@
+// FANCLUB //
+.fanclub__fondo {
+    @include background(no-repeat, cover, center, 90.5vh, fixed);
+    background-image: url(../images/Fanclub.jpg);
+
+    .fanclub__contenedor {
+        font-family: $fontUnbounded;
+        @include sizes(1190px, auto);
+        background-color: black;
+        background-position: center;
+        overflow: auto;
+        margin: 0 auto;
+
+        @include mobile() {
+            background-color: #000;
+            @include sizes(100%, auto);
+        }
+
+        @include tablet() {
+            background-color: #000;
+            @include sizes(100%, auto);
+        }
+
+        @include extra() {
+            background-color: #000;
+            @include sizes(100%, auto);
+        }
+
+        .fanclub__titulo {
+            font-family: $fontUnbounded;
+            text-align: center;
+            color: $ppal;
+            @include fontSize(6rem);
+            margin-top: 7rem;
+
+            @include mobile() {
+                @include fontSize(2rem);
+            }
+
+            @include tablet() {
+                @include fontSize(3rem);
+            }
+
+            @include extra() {
+                @include fontSize(5rem);
+            }
+        }
+
+        .contenedor--gris {
+            margin-top: 2rem;
+            @include sizes(auto, 696px);
+            background-color: rgb(196, 196, 196);
+
+            @include mobile() {
+                @include sizes(auto, 100%);
+            }
+
+            @include tablet() {
+                @include sizes(auto, 100%);
+            }
+
+            @include extra() {
+                @include sizes(auto, 100%);
+            }
+
+            .fanclub__video {
+                padding-top: 10rem;
+                margin-left: 10rem;
+
+                @include mobile() {
+                    padding-top: 2rem;
+                    margin-left: 1rem;
+                    width: 95%;
+                }
+
+                @include tablet() {
+                    padding-top: 2rem;
+                    margin-left: 2.5%;
+                    margin-right: 1rem;
+                    width: 95%;
+                }
+
+                @include extra() {
+                    padding-top: 2rem;
+                    margin-left: 2.5%;
+                    margin-right: 1rem;
+                    width: 95%;
+                }
+            }
+
+            .formulario {
+                float: right;
+                margin-right: 13rem;
+                margin-top: 2rem;
+                @include fontSize(2rem);
+
+                @include mobile() {
+                    float: none;
+                    @include fontSize(1.5rem);
+                    margin-right: 5rem;
+                    margin-left: 5rem;
+                    margin-top: 3rem;
+                }
+
+                @include tablet() {
+                    float: none;
+                    @include fontSize(1.5rem);
+                    margin-right: 5rem;
+                    margin-left: 5rem;
+                    margin-top: 3rem;
+                }
+
+                @include extra() {
+                    float: none;
+                    @include fontSize(1.5rem);
+                    margin-right: 5rem;
+                    margin-left: 5rem;
+                    margin-top: 3rem;
+                }
+
+
+                .form__input {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 1px;
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .form__label {
+                    margin-top: 2rem;
+                    display: block;
+
+                    @include mobile() {
+                        display: flex;
+                    }
+
+                    @include tablet() {
+                        display: block;
+                    }
+
+                    @include extra() {
+                        display: block;
+                    }
+
+                }
+
+                .form__text {
+                    font-size: 1.4rem;
+                    display: inline-block;
+                    margin-left: 5px;
+                    padding-top: 5px;
+
+                    @include mobile() {
+                        @include fontSize(1.2rem);
+                        display: inline;
+                    }
+
+                    @include tablet() {
+                        @include fontSize(1.2rem);
+                        display: inline;
+                    }
+
+                    @include extra() {
+                        @include fontSize(1.3rem);
+                        display: inline;
+                    }
+                }
+
+                .boton {
+                    height: 35px;
+                    width: auto;
+                    @include sizes(auto, 35px);
+                    @include padding(0, 35px, 0, 35px);
+                    margin-top: 1rem;
+                    font-family: $fontUnbounded;
+                    outline: none;
+                    background: $ppal;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #cdafff;
+                    }
+
+                    @include mobile() {
+                        @include fontSize(1rem);
+                        @include sizes(40%, 20px);
+                        @include padding(0, 5px, 0, 5px);
+                        margin-bottom: 2rem;
+                    }
+
+                    @include tablet() {
+                        @include fontSize(1.2rem);
+                        @include sizes(30%, 20px);
+                        @include padding(0, 5px, 0, 5px);
+                        margin-bottom: 2rem;
+                    }
+
+                    @include extra() {
+                        @include fontSize(1.2rem);
+                        @include sizes(30%, 20px);
+                        @include padding(0, 5px, 0, 5px);
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+
+            .fanclub__subtitulo {
+                font-family: $fontUnbounded;
+                color: black;
+                @include fontSize(2rem);
+                margin-top: 4rem;
+                margin-left: 10rem;
+
+                @include mobile() {
+                    @include fontSize(1.5rem);
+                    margin-top: 0rem;
+                    text-align: center;
+                    margin-left: 0%;
+                }
+
+                @include tablet() {
+                    margin-top: 0rem;
+                    text-align: center;
+                    margin-left: 0%;
+                }
+
+                @include extra() {
+                    margin-top: 0rem;
+                    text-align: center;
+                    margin-left: 0%;
+                }
+            }
+
+            .fanclub__beneficios {
+                padding-left: 11.5rem;
+                margin: 5px;
+                @include fontSize(1.5rem);
+
+                @include mobile() {
+                    @include fontSize(1rem);
+                    padding-left: 2rem;
+                    padding-bottom: 10px;
+                }
+
+                @include tablet() {
+                    @include fontSize(1.3rem);
+                    margin-right: 2rem;
+                    padding-left: 6rem;
+                    padding-bottom: 20px;
+                }
+
+                @include extra() {
+                    margin-right: 2rem;
+                    padding-left: 6rem;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
