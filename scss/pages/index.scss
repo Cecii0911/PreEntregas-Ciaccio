@@ -5,7 +5,7 @@ html {
 
 .principal {
     @include background(no-repeat, cover, center, 90.5vh, fixed);
-    background-image: url(../images/Kep1er-22.jpg);
+    background-image: url(../../images/kep1er-22.svg);
 
     .principal__social {
         list-style: none;
@@ -36,12 +36,12 @@ html {
 
             a {
                 text-decoration: none;
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 text-shadow: $sombraSocial;
 
                 &:hover {
                     i {
-                        color: #3d1c05;
+                        color: map-get($map: $palette, $key: 'brown');
                     }
                 }
             }
@@ -51,7 +51,7 @@ html {
     .principal__titulo {
         font-family: $fontUnbounded;
         @include fontSize(8rem);
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-align: center;
         margin-bottom: 0px;
         padding-bottom: 1rem;

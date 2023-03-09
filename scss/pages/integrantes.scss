@@ -1,12 +1,12 @@
 // INTEGRANTES //
 .integrantes__fondo {
     @include background(no-repeat, cover, center, 100vh, fixed);
-    background-image: url(../images/Integrantes.jpg);
+    background-image: url(../../images/integrantes.svg);
 
     .integrantes__titulo {
         font-family: $fontUnbounded;
         @include fontSize(4rem);
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-align: center;
         text-shadow: $sombraTitulo;
         padding-top: 8rem;
@@ -25,7 +25,7 @@
     .integrantes__subtitulo--dos {
         font-family: $fontUnbounded;
         @include fontSize(2rem);
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-shadow: $sombraTitulo;
         text-align: center;
 
@@ -62,7 +62,7 @@
             .integrantes__subtitulo {
                 font-family: $fontUnbounded;
                 @include fontSize(2rem);
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 text-shadow: $sombraTitulo;
                 text-align: center;
             }

@@ -1,12 +1,12 @@
 // DISCOGRAFÍA //
 .discografia__fondo {
     @include background(no-repeat, cover, center, 91.8vh, fixed);
-    background-image: url(../images/Discografia.jpg);
+    background-image: url(../../images/discografia.svg);
 
     .discografia__titulo {
         font-family: $fontUnbounded;
         @include fontSize(4rem);
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-align: left;
         margin-left: 6rem;
         @include padding(10rem, 0, 3rem, 0);
@@ -30,7 +30,7 @@
         .discografia__subtitulo {
             font-family: $fontUnbounded;
             @include fontSize(2.5rem);
-            color: $ppal;
+            color: map-get($map: $palette, $key: 'white');
             text-align: left;
             margin-left: 6rem;
             text-shadow: $sombraTitulo;

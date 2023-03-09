@@ -2,7 +2,15 @@
 $fontUnbounded: 'Unbounded', cursive;
 
 // COLORES //
-$ppal: white;
+$palette: (
+    'white': white,
+    'black': black,
+    'brown': #3d1c05,
+    'lila': #cdafff,
+    'lightgray': rgb(196, 196, 196),
+    'gray': rgb(61, 61, 61),
+    'lighterblack': #111,
+);
 
 // SOMBRA //
 $sombraTitulo: 8px 2px 8px #000;

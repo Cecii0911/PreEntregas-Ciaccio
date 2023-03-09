@@ -1,12 +1,12 @@
 // SOBRE KEP1ER //
 .sobrekep__fondo {
     @include background(no-repeat, cover, center, 100vh, fixed);
-    background-image: url(../images/SobreKep1er.jpg);
+    background-image: url(../../images/sobrekep1er.svg);
 
     .sobrekep__titulo {
         font-family: $fontUnbounded;
         @include fontSize(4rem);
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-align: left;
         text-shadow: $sombraTitulo;
         padding-top: 10rem;
@@ -37,7 +37,7 @@
 
     .sobrekep__textovideo {
         display: flex;
-        background-color: #000;
+        background-color: map-get($map: $palette, $key: 'black');
 
         @include mobile() {
             display: block;
@@ -69,11 +69,11 @@
 
             .sobrekep__subtitulo--izquierda {
                 font-family: $fontUnbounded;
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 @include fontSize(2.3rem);
                 margin-left: 18rem;
                 margin-top: 1.5rem;
-                background-color: #000;
+                background-color: map-get($map: $palette, $key: 'black');
 
                 @include mobile() {
                     @include fontSize(2rem);
@@ -102,7 +102,7 @@
 
             .sobrekep__texto--izquierda {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 @include fontSize(1.7rem);
                 margin: 10px;
                 margin-left: 18rem;
@@ -162,7 +162,7 @@
 
     .sobrekep__textoimg {
         display: flex;
-        background-color: black;
+        background-color: map-get($map: $palette, $key: 'black');
 
         @include mobile() {
             display: block;
@@ -225,7 +225,7 @@
 
             .sobrekep__subtitulo--derecha {
                 font-family: $fontUnbounded;
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 @include fontSize(2.3rem);
                 @include margin(2rem, 18rem, 0, 5.5rem);
 
@@ -250,7 +250,7 @@
 
             .sobrekep__texto--derecha {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: $ppal;
+                color: map-get($map: $palette, $key: 'white');
                 @include fontSize(1.6rem);
                 margin: 10px;
                 margin-right: 18rem;

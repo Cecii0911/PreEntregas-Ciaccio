@@ -1,13 +1,13 @@
 // GALERIA //
 .galeria__fondo {
     @include background(no-repeat, cover, center, 91.8vh, fixed);
-    background-image: url(../images/Discografia.jpg);
+    background-image: url(../../images/discografia.svg);
 
     .galeria__titulo {
         font-family: $fontUnbounded;
         @include fontSize(4rem);
         font-size: 4rem;
-        color: $ppal;
+        color: map-get($map: $palette, $key: 'white');
         text-align: left;
         text-shadow: $sombraTitulo;
         @include padding(10rem, 0, 1rem, 0);

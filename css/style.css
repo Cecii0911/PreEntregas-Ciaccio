@@ -34,7 +34,7 @@ footer {
       padding-bottom: 0.5rem;
       margin-bottom: 0px; }
   footer .footer__abajo {
-    background: #000;
+    background-color: black;
     width: auto;
     padding: 1rem;
     text-align: center; }
@@ -161,7 +161,7 @@ html {
   background-position: center;
   min-height: 90.5vh;
   background-attachment: fixed;
-  background-image: url(../images/Kep1er-22.jpg); }
+  background-image: url(../../images/kep1er-22.svg); }
   .principal .principal__social {
     list-style: none;
     display: flex;
@@ -243,7 +243,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/SobreKep1er.jpg); }
+  background-image: url(../../images/sobrekep1er.svg); }
   .sobrekep__fondo .sobrekep__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -273,7 +273,7 @@ html {
         margin-left: 0rem; } }
   .sobrekep__fondo .sobrekep__textovideo {
     display: flex;
-    background-color: #000; }
+    background-color: black; }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .sobrekep__fondo .sobrekep__textovideo {
         display: block; } }
@@ -301,7 +301,7 @@ html {
         font-size: 2.3rem;
         margin-left: 18rem;
         margin-top: 1.5rem;
-        background-color: #000; }
+        background-color: black; }
         @media screen and (min-width: 320px) and (max-width: 480px) {
           .sobrekep__fondo .sobrekep__textovideo .sobrekep__texto .sobrekep__subtitulo--izquierda {
             font-size: 2rem;
@@ -499,7 +499,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/Integrantes.jpg); }
+  background-image: url(../../images/integrantes.svg); }
   .integrantes__fondo .integrantes__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -569,7 +569,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/Integrantes.jpg); }
+  background-image: url(../../images/integrantes.svg); }
   .integrantes__fondo .container {
     padding-right: 0px;
     padding-left: 0px; }
@@ -602,7 +602,7 @@ html {
   background-position: center;
   min-height: 91.8vh;
   background-attachment: fixed;
-  background-image: url(../images/Discografia.jpg); }
+  background-image: url(../../images/discografia.svg); }
   .discografia__fondo .discografia__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -668,7 +668,7 @@ html {
   background-position: center;
   min-height: 91.8vh;
   background-attachment: fixed;
-  background-image: url(../images/Discografia.jpg); }
+  background-image: url(../../images/discografia.svg); }
   .galeria__fondo .galeria__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -843,7 +843,7 @@ html {
   background-position: center;
   min-height: 90.5vh;
   background-attachment: fixed;
-  background-image: url(../images/Fanclub.jpg); }
+  background-image: url(../../images/fanclub.svg); }
   .fanclub__fondo .fanclub__contenedor {
     font-family: "Unbounded", cursive;
     height: auto;
@@ -854,17 +854,14 @@ html {
     margin: 0 auto; }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .fanclub__fondo .fanclub__contenedor {
-        background-color: #000;
         height: auto;
         width: 100%; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       .fanclub__fondo .fanclub__contenedor {
-        background-color: #000;
         height: auto;
         width: 100%; } }
     @media screen and (min-width: 769px) and (max-width: 1400px) {
       .fanclub__fondo .fanclub__contenedor {
-        background-color: #000;
         height: auto;
         width: 100%; } }
     .fanclub__fondo .fanclub__contenedor .fanclub__titulo {
@@ -992,7 +989,7 @@ html {
           margin-top: 1rem;
           font-family: "Unbounded", cursive;
           outline: none;
-          background: white;
+          color: white;
           border: none;
           cursor: pointer; }
           .fanclub__fondo .fanclub__contenedor .contenedor--gris .formulario .boton:hover {

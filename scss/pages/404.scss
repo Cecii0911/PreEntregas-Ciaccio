@@ -35,7 +35,7 @@
 
         .error__titulo {
             font-family: $fontUnbounded;
-            color: black;
+            color: map-get($map: $palette, $key: 'black');
             font-weight: bold;
             @include fontSize(8rem);
             margin-top: 17rem;
@@ -66,7 +66,7 @@
 
         .error__subtitulo {
             font-family: $fontUnbounded;
-            color: black;
+            color: map-get($map: $palette, $key: 'black');
             @include fontSize(4rem);
             margin-left: 0%;
             text-align: center;
@@ -95,13 +95,13 @@
 
             .error__p {
                 font-family: $fontUnbounded;
-                color: rgb(61, 61, 61);
+                color: map-get($map: $palette, $key: 'gray');
                 @include fontSize(2rem);
                 text-align: start;
                 padding-top: 1rem;
 
                 &:hover {
-                    color: #3d1c05;
+                    color: map-get($map: $palette, $key: 'brown');
                 }
 
                 @include mobile() {

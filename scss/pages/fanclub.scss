@@ -1,35 +1,32 @@
 // FANCLUB //
 .fanclub__fondo {
     @include background(no-repeat, cover, center, 90.5vh, fixed);
-    background-image: url(../images/Fanclub.jpg);
+    background-image: url(../../images/fanclub.svg);
 
     .fanclub__contenedor {
         font-family: $fontUnbounded;
         @include sizes(1190px, auto);
-        background-color: black;
+        background-color: map-get($map: $palette, $key: 'black');
         background-position: center;
         overflow: auto;
         margin: 0 auto;
 
         @include mobile() {
-            background-color: #000;
             @include sizes(100%, auto);
         }
 
         @include tablet() {
-            background-color: #000;
             @include sizes(100%, auto);
         }
 
         @include extra() {
-            background-color: #000;
             @include sizes(100%, auto);
         }
 
         .fanclub__titulo {
             font-family: $fontUnbounded;
             text-align: center;
-            color: $ppal;
+            color: map-get($map: $palette, $key: 'white');
             @include fontSize(6rem);
             margin-top: 7rem;
 
@@ -49,7 +46,7 @@
         .contenedor--gris {
             margin-top: 2rem;
             @include sizes(auto, 696px);
-            background-color: rgb(196, 196, 196);
+            background-color: map-get($map: $palette, $key: 'lightgray');
 
             @include mobile() {
                 @include sizes(auto, 100%);
@@ -175,12 +172,12 @@
                     margin-top: 1rem;
                     font-family: $fontUnbounded;
                     outline: none;
-                    background: $ppal;
+                    color: map-get($map: $palette, $key: 'white');
                     border: none;
                     cursor: pointer;
 
                     &:hover {
-                        background-color: #cdafff;
+                        background-color: map-get($map: $palette, $key: 'lila');
                     }
 
                     @include mobile() {
