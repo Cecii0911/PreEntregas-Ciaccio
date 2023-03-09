@@ -1,7 +1,7 @@
 // FANCLUB //
 .fanclub__fondo {
     @include background(no-repeat, cover, center, 90.5vh, fixed);
-    background-image: url(../../images/fanclub.svg);
+    background-image: url(../images/Fanclub.jpg);
 
     .fanclub__contenedor {
         font-family: $fontUnbounded;
@@ -172,7 +172,7 @@
                     margin-top: 1rem;
                     font-family: $fontUnbounded;
                     outline: none;
-                    color: map-get($map: $palette, $key: 'black');
+                    color: map-get($map: $palette, $key: 'white');
                     border: none;
                     cursor: pointer;
 
@@ -205,7 +205,7 @@
 
             .fanclub__subtitulo {
                 font-family: $fontUnbounded;
-                color: black;
+                color: map-get($map: $palette, $key: 'black');
                 @include fontSize(2rem);
                 margin-top: 4rem;
                 margin-left: 10rem;
