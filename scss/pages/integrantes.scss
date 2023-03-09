@@ -1,7 +1,7 @@
 // INTEGRANTES //
 .integrantes__fondo {
     @include background(no-repeat, cover, center, 100vh, fixed);
-    background-image: url(../../images/integrantes.svg);
+    background-image: url(../images/integrantes.svg);
 
     .integrantes__titulo {
         font-family: $fontUnbounded;
