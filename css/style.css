@@ -602,7 +602,7 @@ html {
   background-position: center;
   min-height: 91.8vh;
   background-attachment: fixed;
-  background-image: url(../images/Discografia.jpg); }
+  background-image: url(../images/discografia.svg); }
   .discografia__fondo .discografia__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
