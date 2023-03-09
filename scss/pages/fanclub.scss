@@ -172,7 +172,7 @@
                     margin-top: 1rem;
                     font-family: $fontUnbounded;
                     outline: none;
-                    color: map-get($map: $palette, $key: 'white');
+                    color: map-get($map: $palette, $key: 'black');
                     border: none;
                     cursor: pointer;
 
