@@ -1,7 +1,7 @@
 // GALERIA //
 .galeria__fondo {
     @include background(no-repeat, cover, center, 91.8vh, fixed);
-    background-image: url(../images/Discografia.jpg);
+    background-image: url(../images/Discografia.svg);
 
     .galeria__titulo {
         font-family: $fontUnbounded;

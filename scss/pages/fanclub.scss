@@ -1,7 +1,7 @@
 // FANCLUB //
 .fanclub__fondo {
     @include background(no-repeat, cover, center, 90.5vh, fixed);
-    background-image: url(../images/Fanclub.jpg);
+    background-image: url(../images/Fanclub.svg);
 
     .fanclub__contenedor {
         font-family: $fontUnbounded;

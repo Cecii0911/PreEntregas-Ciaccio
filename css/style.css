@@ -161,7 +161,7 @@ html {
   background-position: center;
   min-height: 90.5vh;
   background-attachment: fixed;
-  background-image: url(../images/Kep1er-22.jpg); }
+  background-image: url(../images/Kep1er-22.svg); }
   .principal .principal__social {
     list-style: none;
     display: flex;
@@ -243,7 +243,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/SobreKep1er.jpg); }
+  background-image: url(../images/SobreKep1er.svg); }
   .sobrekep__fondo .sobrekep__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -499,7 +499,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/integrantes.jpg); }
+  background-image: url(../images/Integrantes.svg); }
   .integrantes__fondo .integrantes__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -569,7 +569,7 @@ html {
   background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/Integrantes.jpg); }
+  background-image: url(../images/Integrantes.svg); }
   .integrantes__fondo .container {
     padding-right: 0px;
     padding-left: 0px; }
@@ -602,7 +602,7 @@ html {
   background-position: center;
   min-height: 91.8vh;
   background-attachment: fixed;
-  background-image: url(../images/discografia.svg); }
+  background-image: url(../images/Discografia.svg); }
   .discografia__fondo .discografia__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -668,7 +668,7 @@ html {
   background-position: center;
   min-height: 91.8vh;
   background-attachment: fixed;
-  background-image: url(../images/Discografia.jpg); }
+  background-image: url(../images/Discografia.svg); }
   .galeria__fondo .galeria__titulo {
     font-family: "Unbounded", cursive;
     font-size: 4rem;
@@ -843,7 +843,7 @@ html {
   background-position: center;
   min-height: 90.5vh;
   background-attachment: fixed;
-  background-image: url(../images/Fanclub.jpg); }
+  background-image: url(../images/Fanclub.svg); }
   .fanclub__fondo .fanclub__contenedor {
     font-family: "Unbounded", cursive;
     height: auto;
