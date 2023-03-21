@@ -92,31 +92,6 @@ main {
         }
     }
 
-    // .principal__subtitulo {
-    //     font-family: $fontUnbounded;
-    //     @include fontSize(2rem);
-    //     color: map-get($map: $palette, $key: 'white');
-    //     width: 30%;
-    //     text-align: center;
-    //     text-decoration: none;
-    //     border: 2px solid white;
-    //     border-radius: 50px;
-    //     padding: 0.6rem 3.5rem;
-    //     margin-left: 35%;
-    //     text-shadow: $sombraTitulo;
-
-    //     @include mobile() {
-    //         display: none;
-    //     }
-
-    //     @include tablet() {
-    //         display: none;
-    //     }
-        
-    //     @include extra() {
-    //         display: none;
-    //     }
-    // }
     .seccion_f {
         background-color: map-get($map: $palette, $key: 'lightgray');
         @include padding(50px, 10px, 0px, 10px);
