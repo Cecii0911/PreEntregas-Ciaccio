@@ -48,6 +48,13 @@
     margin-left: $left;
 }
 
+@mixin button($display, $align, $lineh, $txtdec){
+    display: $display;
+    text-align: $align;
+    line-height: $lineh;
+    text-decoration: $txtdec;
+}
+
 // Mobile View //
 @mixin mobile(){
     @media screen and (min-width: 320px) and (max-width: 480px){
