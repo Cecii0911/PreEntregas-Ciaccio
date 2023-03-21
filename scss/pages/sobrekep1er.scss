@@ -177,7 +177,7 @@
         }
 
         .sobrekep__img {
-            @include sizes(540px, 305px);
+            @include sizes(700px, 305px);
             padding-left: 18rem;
             margin-top: 3rem;
             margin-bottom: 3rem;
@@ -199,7 +199,7 @@
             }
 
             @include extra() {
-                @include sizes(80%, auto);
+                @include sizes(90%, auto);
                 padding-left: 10%;
                 margin-top: 1.5rem;
                 margin-bottom: 0rem;

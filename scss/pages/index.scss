@@ -3,75 +3,209 @@ html {
     @include fontSize(62.5%);
 }
 
-.principal {
-    @include background(no-repeat, cover, center, 90.5vh, fixed);
-    background-image: url(../images/Kep1er-22.svg);
+main {
+    .principal {
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url(../images/index.png);
 
-    .principal__social {
-        list-style: none;
-        @include flexbox(0, center, none);
-        margin-bottom: 0px;
+        @include mobile() {
+            @include background(no-repeat, cover, center, 90.5vh, fixed);
+        }
 
-        li {
-            @include padding(67rem, 5rem, 0, 5rem);
-            @include fontSize(5rem);
+        @include tablet() {
+            @include background(no-repeat, cover, center, 90.5vh, fixed);
+        }
 
-            @include mobile() {
-                @include padding(68rem, 1rem, 0, 1rem);
-                @include fontSize(2rem);
-                text-align: center;
-            }
-
-            @include tablet() {
-                @include padding(70rem, 1rem, 0, 1rem);
-                @include fontSize(2.5rem);
-                text-align: center;
-            }
-
-            @include extra() {
-                @include padding(69rem, 1rem, 0, 1rem);
-                @include fontSize(3rem);
-                text-align: center;
-            }
-
-            a {
-                text-decoration: none;
-                color: map-get($map: $palette, $key: 'white');
-                text-shadow: $sombraSocial;
-
-                &:hover {
-                    i {
-                        color: map-get($map: $palette, $key: 'brown');
+        @include extra() {
+            @include background(no-repeat, cover, center, 90.5vh, fixed);
+        }
+    
+        .principal__social {
+            list-style: none;
+            @include flexbox(0, center, none);
+            margin-bottom: 0px;
+    
+            li {
+                @include padding(67rem, 5rem, 0, 5rem);
+                @include fontSize(5rem);
+    
+                @include mobile() {
+                    @include padding(68rem, 1rem, 0, 1rem);
+                    @include fontSize(2rem);
+                    text-align: center;
+                }
+    
+                @include tablet() {
+                    @include padding(70rem, 1rem, 0, 1rem);
+                    @include fontSize(2.5rem);
+                    text-align: center;
+                }
+    
+                @include extra() {
+                    @include padding(69rem, 1rem, 0, 1rem);
+                    @include fontSize(3rem);
+                    text-align: center;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: map-get($map: $palette, $key: 'white');
+                    text-shadow: $sombraSocial;
+    
+                    &:hover {
+                        i {
+                            color: map-get($map: $palette, $key: 'gray');
+                        }
                     }
                 }
             }
         }
+    
+        .principal__titulo {
+            font-family: $fontUnbounded;
+            @include fontSize(8rem);
+            color: map-get($map: $palette, $key: 'white');
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 1rem;
+            text-shadow: $sombraTitulo;
+    
+            @include mobile() {
+                @include fontSize(3rem);
+                @include margin(0, 15px, 0, 15px);
+            }
+    
+            @include tablet() {
+                @include fontSize(3.5rem);
+                text-align: center;
+                @include margin(0, 15px, 0, 15px);
+            }
+    
+            @include extra() {
+                @include fontSize(5rem);
+                text-align: center;
+                @include margin(0, 15px, 0, 15px);
+            }
+        }
     }
 
-    .principal__titulo {
-        font-family: $fontUnbounded;
-        @include fontSize(8rem);
-        color: map-get($map: $palette, $key: 'white');
-        text-align: center;
-        margin-bottom: 0px;
-        padding-bottom: 1rem;
-        text-shadow: $sombraTitulo;
+    // .principal__subtitulo {
+    //     font-family: $fontUnbounded;
+    //     @include fontSize(2rem);
+    //     color: map-get($map: $palette, $key: 'white');
+    //     width: 30%;
+    //     text-align: center;
+    //     text-decoration: none;
+    //     border: 2px solid white;
+    //     border-radius: 50px;
+    //     padding: 0.6rem 3.5rem;
+    //     margin-left: 35%;
+    //     text-shadow: $sombraTitulo;
+
+    //     @include mobile() {
+    //         display: none;
+    //     }
+
+    //     @include tablet() {
+    //         display: none;
+    //     }
+        
+    //     @include extra() {
+    //         display: none;
+    //     }
+    // }
+    .seccion_f {
+        background-color: map-get($map: $palette, $key: 'lightgray');
+        @include padding(50px, 10px, 0px, 10px);
 
         @include mobile() {
-            @include fontSize(3rem);
-            @include margin(0, 15px, 0, 15px);
+            @include padding(20px, 10px, 0px, 10px);
         }
 
-        @include tablet() {
-            @include fontSize(3.5rem);
-            text-align: center;
-            @include margin(0, 15px, 0, 15px);
-        }
 
-        @include extra() {
-            @include fontSize(5rem);
-            text-align: center;
-            @include margin(0, 15px, 0, 15px);
+        .index__textovideo {
+            display: flex;
+
+            @include mobile() {
+                display: block;
+            }
+
+            @include tablet() {
+                display: block;
+            }
+
+            @include extra() {
+                display: block;
+            }
+
+
+            .index__video {
+                @include sizes(860px, 500px);
+                @include padding (0, 5rem, 0, 5rem);
+
+                @include mobile() {
+                    @include sizes(95%, 250px);
+                    @include padding (0, 0, 1rem, 1.5rem);
+                }
+
+                @include tablet() {
+                    @include sizes(95%, 250px);
+                    @include padding (0, 0, 1rem, 4.5rem);
+                }
+
+                @include extra() {
+                    @include sizes(95%, 550px);
+                    @include padding (0, 0, 1rem, 4.5rem);
+                }
+            }
+
+            .index__solotexto {
+                font-family: $fontUnbounded;
+                text-align: center;
+
+                .index__subtitulo {
+                    @include fontSize(3rem);
+                    color: map-get($map: $palette, $key: 'black');
+                    text-align: center;
+                    padding-bottom: 1.5rem;
+
+                    @include mobile() {
+                        @include fontSize(2rem);
+                        padding-bottom: 0.5rem;
+                    }
+                }
+
+                .index__texto {
+                    @include fontSize(1.5rem);
+                    color: map-get($map: $palette, $key: 'black');
+                    text-align: center;
+                    margin-bottom: 0px;
+
+                    @include mobile() {
+                        @include fontSize(1rem);
+                    }
+                }
+
+                .index__img {
+                    @include sizes(895px, 415px);
+
+                    @include mobile() {
+                        @include sizes(100%, 100%);
+                        padding-top: 2rem;
+                    }
+
+                    @include tablet() {
+                        @include sizes(100%, 100%);
+                    }
+
+                    @include extra() {
+                        @include sizes(100%, 100%);
+                    }
+                }
+            }
         }
     }
 }

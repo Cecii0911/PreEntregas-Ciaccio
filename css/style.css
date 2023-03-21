@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after
 * {
   margin: 0px;
   padding: 0px;
@@ -155,28 +158,48 @@ footer {
 html {
   font-size: 62.5%; }
 
-.principal {
-  background-repeat: no-repeat;
+main .principal {
+  height: 100vh;
+  width: auto;
   background-size: cover;
-  background-position: center;
-  min-height: 90.5vh;
   background-attachment: fixed;
-  background-image: url(../images/Kep1er-22.svg); }
-  .principal .principal__social {
+  background-image: url(../images/index.png); }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    main .principal {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 90.5vh;
+      background-attachment: fixed; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    main .principal {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 90.5vh;
+      background-attachment: fixed; } }
+  @media screen and (min-width: 769px) and (max-width: 1400px) {
+    main .principal {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 90.5vh;
+      background-attachment: fixed; } }
+  main .principal .principal__social {
     list-style: none;
     display: flex;
     flex-direction: 0;
     justify-content: center;
     align-items: none;
     margin-bottom: 0px; }
-    .principal .principal__social li {
+    main .principal .principal__social li {
       padding-top: 67rem;
       padding-right: 5rem;
       padding-bottom: 0;
       padding-left: 5rem;
       font-size: 5rem; }
       @media screen and (min-width: 320px) and (max-width: 480px) {
-        .principal .principal__social li {
+        main .principal .principal__social li {
           padding-top: 68rem;
           padding-right: 1rem;
           padding-bottom: 0;
@@ -184,7 +207,7 @@ html {
           font-size: 2rem;
           text-align: center; } }
       @media screen and (min-width: 481px) and (max-width: 768px) {
-        .principal .principal__social li {
+        main .principal .principal__social li {
           padding-top: 70rem;
           padding-right: 1rem;
           padding-bottom: 0;
@@ -192,20 +215,20 @@ html {
           font-size: 2.5rem;
           text-align: center; } }
       @media screen and (min-width: 769px) and (max-width: 1400px) {
-        .principal .principal__social li {
+        main .principal .principal__social li {
           padding-top: 69rem;
           padding-right: 1rem;
           padding-bottom: 0;
           padding-left: 1rem;
           font-size: 3rem;
           text-align: center; } }
-      .principal .principal__social li a {
+      main .principal .principal__social li a {
         text-decoration: none;
         color: white;
         text-shadow: 3px 2px 5px #000; }
-        .principal .principal__social li a:hover i {
-          color: #3d1c05; }
-  .principal .principal__titulo {
+        main .principal .principal__social li a:hover i {
+          color: #3d3d3d; }
+  main .principal .principal__titulo {
     font-family: "Unbounded", cursive;
     font-size: 8rem;
     color: white;
@@ -214,14 +237,14 @@ html {
     padding-bottom: 1rem;
     text-shadow: 8px 2px 8px #000; }
     @media screen and (min-width: 320px) and (max-width: 480px) {
-      .principal .principal__titulo {
+      main .principal .principal__titulo {
         font-size: 3rem;
         margin-top: 0;
         margin-right: 15px;
         margin-bottom: 0;
         margin-left: 15px; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      .principal .principal__titulo {
+      main .principal .principal__titulo {
         font-size: 3.5rem;
         text-align: center;
         margin-top: 0;
@@ -229,13 +252,104 @@ html {
         margin-bottom: 0;
         margin-left: 15px; } }
     @media screen and (min-width: 769px) and (max-width: 1400px) {
-      .principal .principal__titulo {
+      main .principal .principal__titulo {
         font-size: 5rem;
         text-align: center;
         margin-top: 0;
         margin-right: 15px;
         margin-bottom: 0;
         margin-left: 15px; } }
+
+main .seccion_f {
+  background-color: #c4c4c4;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    main .seccion_f {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 0px;
+      padding-left: 10px; } }
+  main .seccion_f .index__textovideo {
+    display: flex; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      main .seccion_f .index__textovideo {
+        display: block; } }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      main .seccion_f .index__textovideo {
+        display: block; } }
+    @media screen and (min-width: 769px) and (max-width: 1400px) {
+      main .seccion_f .index__textovideo {
+        display: block; } }
+    main .seccion_f .index__textovideo .index__video {
+      height: 500px;
+      width: 860px;
+      padding-top: 0;
+      padding-right: 5rem;
+      padding-bottom: 0;
+      padding-left: 5rem; }
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        main .seccion_f .index__textovideo .index__video {
+          height: 250px;
+          width: 95%;
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 1rem;
+          padding-left: 1.5rem; } }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        main .seccion_f .index__textovideo .index__video {
+          height: 250px;
+          width: 95%;
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 1rem;
+          padding-left: 4.5rem; } }
+      @media screen and (min-width: 769px) and (max-width: 1400px) {
+        main .seccion_f .index__textovideo .index__video {
+          height: 550px;
+          width: 95%;
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 1rem;
+          padding-left: 4.5rem; } }
+    main .seccion_f .index__textovideo .index__solotexto {
+      font-family: "Unbounded", cursive;
+      text-align: center; }
+      main .seccion_f .index__textovideo .index__solotexto .index__subtitulo {
+        font-size: 3rem;
+        color: black;
+        text-align: center;
+        padding-bottom: 1.5rem; }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          main .seccion_f .index__textovideo .index__solotexto .index__subtitulo {
+            font-size: 2rem;
+            padding-bottom: 0.5rem; } }
+      main .seccion_f .index__textovideo .index__solotexto .index__texto {
+        font-size: 1.5rem;
+        color: black;
+        text-align: center;
+        margin-bottom: 0px; }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          main .seccion_f .index__textovideo .index__solotexto .index__texto {
+            font-size: 1rem; } }
+      main .seccion_f .index__textovideo .index__solotexto .index__img {
+        height: 415px;
+        width: 895px; }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          main .seccion_f .index__textovideo .index__solotexto .index__img {
+            height: 100%;
+            width: 100%;
+            padding-top: 2rem; } }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          main .seccion_f .index__textovideo .index__solotexto .index__img {
+            height: 100%;
+            width: 100%; } }
+        @media screen and (min-width: 769px) and (max-width: 1400px) {
+          main .seccion_f .index__textovideo .index__solotexto .index__img {
+            height: 100%;
+            width: 100%; } }
 
 .sobrekep__fondo {
   background-repeat: no-repeat;
@@ -392,7 +506,7 @@ html {
         display: block; } }
     .sobrekep__fondo .sobrekep__textoimg .sobrekep__img {
       height: 305px;
-      width: 540px;
+      width: 700px;
       padding-left: 18rem;
       margin-top: 3rem;
       margin-bottom: 3rem; }
@@ -415,7 +529,7 @@ html {
       @media screen and (min-width: 769px) and (max-width: 1400px) {
         .sobrekep__fondo .sobrekep__textoimg .sobrekep__img {
           height: auto;
-          width: 80%;
+          width: 90%;
           padding-left: 10%;
           margin-top: 1.5rem;
           margin-bottom: 0rem;
@@ -897,6 +1011,8 @@ html {
           height: 100%;
           width: auto; } }
       .fanclub__fondo .fanclub__contenedor .contenedor--gris .fanclub__video {
+        height: 400px;
+        width: 45%;
         padding-top: 10rem;
         margin-left: 10rem; }
         @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -989,7 +1105,7 @@ html {
           margin-top: 1rem;
           font-family: "Unbounded", cursive;
           outline: none;
-          color: white;
+          color: black;
           border: none;
           cursor: pointer; }
           .fanclub__fondo .fanclub__contenedor .contenedor--gris .formulario .boton:hover {
